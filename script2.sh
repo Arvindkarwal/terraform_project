@@ -77,6 +77,7 @@ cat <<EOF > /var/www/html/index.html
 </html>
 EOF
 
+
 # Start Apache and enable it on boot
 systemctl start apache2
 systemctl enable apache2

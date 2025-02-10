@@ -22,6 +22,7 @@ variable "rt_route" {
   default = "0.0.0.0/0"
 }
 
+
 variable "ami_id" {
   default = "ami-04b4f1a9cf54c11d0"
 }
