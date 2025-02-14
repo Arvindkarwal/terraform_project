@@ -81,6 +81,9 @@ resource "aws_instance" "webserver1" {
   vpc_security_group_ids = [aws_security_group.web-sg.id]
   subnet_id              = aws_subnet.sub1.id
   user_data              = base64encode(file("script1.sh"))
+  tags = {
+    Name = "Inst-A"
+  }
 }
 
 resource "aws_instance" "webserver2" {
@@ -89,6 +92,9 @@ resource "aws_instance" "webserver2" {
   vpc_security_group_ids = [aws_security_group.web-sg.id]
   subnet_id              = aws_subnet.sub2.id
   user_data              = base64encode(file("script2.sh"))
+  tags = {
+    Name = "Inst-B"
+  }
 }
 
 resource "aws_lb" "app-load-bal" {
