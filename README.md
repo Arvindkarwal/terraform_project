@@ -33,3 +33,9 @@ This project provisions an AWS infrastructure using Terraform. It demonstrates t
    - `Instance A`: Displays "Server 1, Instance A, Page 1".
    - `Instance B`: Displays "Server 2, Instance B, Page 2".
 4. Refreshing the page alternates the response, demonstrating the **load balancing** process.
+
+
+## App Page
+
+
+<img width="1460" alt="Image" src="https://github.com/user-attachments/assets/e118f6fd-9945-48ae-bd9a-1df2f73febd8" />
