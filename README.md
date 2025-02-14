@@ -10,7 +10,7 @@ This project provisions an AWS infrastructure using Terraform. It demonstrates t
 
 
 
-# Key Features 📋
+## Key Features 📋
 
 - **VPC**: A Virtual Private Cloud is created to host the infrastructure.
 - **Public Subnets**: Two public subnets are created within the VPC.
@@ -20,9 +20,16 @@ This project provisions an AWS infrastructure using Terraform. It demonstrates t
   - The `index.html` displays:
     - Server details (`Server 1` or `Server 2`)
     - Instance name (`Instance A` or `Instance B`)
-    - Page details (`Page 1` or `Page 2`)
+    - Html Page details (`Page 1` or `Page 2`)
 - **Application Load Balancer (ALB)**:
   - Balances incoming requests across the two EC2 instances.
   - When accessing the Load Balancer's DNS, the displayed page alternates between `Instance A` and `Instance B` upon refreshing.
 
 ## How It Works 🔄
+
+1. A user sends a request to the **Load Balancer's DNS**.
+2. The ALB forwards the request to one of the EC2 instances, distributing traffic evenly.
+3. Each EC2 instance serves a unique web page:
+   - `Instance A`: Displays "Server 1, Instance A, Page 1".
+   - `Instance B`: Displays "Server 2, Instance B, Page 2".
+4. Refreshing the page alternates the response, demonstrating the **load balancing** process.
