@@ -1,6 +1,6 @@
 # Built Iac using Terraform
 
-![Image](https://github.com/user-attachments/assets/8dda9bef-1859-420b-8960-db6f66a23457)
+![Image](https://github.com/user-attachments/assets/97594f84-2ff0-4575-9998-12ee62acec80)
 
 
 
